@@ -1,5 +1,25 @@
 {
-  "User": {
-    "title": { "string": {} }
-  }
+					"idCliente": "{{ Clave }}",
+					"idJira": "",
+					"urlPeticion": "https://jirarga.seguros.rga/browse/{{ idCliente }}",
+					"servicio": "AM RGA",
+					"titulo": "{{ Resumen }}",
+					"estado": "{{ Estado }}",
+					"tipo": "Incidencia",                              
+					"prioridad": "{{ Prioridad }}",
+					"fechaCreacion": "{{ Creada }}",
+					"fechaPrevistaEntrega": "",
+					"fechaEntrega": "{{ Fecha de entrega }}",
+					"fechaCierre": "{{ Resuelta }}",
+					"fechaModificacion": "{{ Actualizada }}",
+					"versionEntrega": "",
+					"categoria": "{{ Agrupación de Aplicaciones }}",
+					"estimacion": "",
+					"incurrido": "{{ Tiempo Trabajado }}",
+					"etc": "",
+					"reaperturas": "",
+					"excluidoAns": "{{ Etiquetas }}",
+					"informador": "{{ Nombre Departamento }}",
+					"asignado": "{{ Responsable }}",
+					"equipo": "{{ Nombre del Proveedor }}"
 }
