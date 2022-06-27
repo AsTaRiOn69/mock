@@ -1,4 +1,5 @@
 {
+	"User": {
 					"idCliente": "{{ Clave }}",
 					"idJira": "",
 					"urlPeticion": "https://jirarga.seguros.rga/browse/{{ idCliente }}",
@@ -22,4 +23,5 @@
 					"informador": "{{ Nombre Departamento }}",
 					"asignado": "{{ Responsable }}",
 					"equipo": "{{ Nombre del Proveedor }}"
+	}
 }
