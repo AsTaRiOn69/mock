@@ -1,21 +1,10 @@
 {
   "Post": {
-    				"idCliente": { 
-						"regexp": "GDLD-[0-9]{5}"
-					},
-					"idJira": {
-						"string": ""
-					},
-					"urlPeticion": {
-						"regexp": "https://jirarga\\.seguros\\.rga/browse/GDLD-[0-9]{5}",
-					},
-					"servicio": {
-						"string": [
-							"AM RGA"
-						]
-					},
-					"titulo": {
-						"string": {}
-					}
+    "idCliente": { 
+      "regexp": "GDLD-[0-9]{5}"
+    },
+    "idJira": {
+      "string": ""
+    },
   }
 }
