@@ -1,35 +1,21 @@
 {
   "Post": {
-    "cover": {
-      "regexp": "https://picsum\\.photos/seed/[0-9]{5}/1920/270"
-    },
-    "title": {
-      "loremWords": {
-        "minLength": 5,
-        "maxLength": 20
-      }
-    },
-    "body": {
-      "loremParagraphs": {
-        "minLength": 10,
-        "maxLength": 100
-      }
-    },
-    "tag": {
-      "string": [
-        "one",
-        "two",
-        "three"
-      ]
-    },
-    "isDraft": {
-      "boolean": {}
-    },
-    "createdAt": {
-      "dateTime": {
-        "min": "2010-01-01T00:00:00Z",
-        "max": "2020-12-31T23:59:59Z"
-      }
-    }
+    				"idCliente": { 
+						"regexp": "GDLD-[0-9]{5}"
+					},
+					"idJira": {
+						"string": ""
+					},
+					"urlPeticion": {
+						"regexp": "https://jirarga\\.seguros\\.rga/browse/GDLD-[0-9]{5}",
+					},
+					"servicio": {
+						"string": [
+							"AM RGA"
+						]
+					},
+					"titulo": {
+						"string": {}
+					}
   }
 }
