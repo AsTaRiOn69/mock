@@ -3,7 +3,9 @@
 					"idCliente": { 
 						"regexp": "GDLD-[0-9]{5}"
 					},
-					"idJira": "",
+					"idJira": {
+						"string": ""
+					},
 					"urlPeticion": {
 						"regexp": "https://jirarga\\.seguros\\.rga/browse/GDLD-[0-9]{5}",
 					},
@@ -98,14 +100,18 @@
 							"Vida Prestaciones"
 						]
 					},
-					"estimacion": "",
+					"estimacion": {
+						"string": ""
+					},
 					"incurrido": { 
 						"int": { 
 							"min": 0, 
 							"max": 5000
 						}
 					},
-					"etc": "",
+					"etc": {
+						"string": ""
+					},
 					"reaperturas": { 
 						"int": { 
 							"min": 0, 
