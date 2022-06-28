@@ -9,7 +9,7 @@
       ]
     },
     "urlPeticion": {
-      "regexp": "https://jirarga\\.seguros\\.rga/browse/GDLD-[0-9]{5}",
+      "regexp": "https://jirarga\\.seguros\\.rga/browse/GDLD-[0-9]{5}"
     },
     "servicio": {
       "string": [
