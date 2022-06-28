@@ -106,8 +106,14 @@
 							""
 						]
 					},
-					"informador": { "regexp": "[A-Z][a-z]{5,10}" } },
-					"asignado": { "regexp": "[A-Z][a-z]{5,10}" } },
-					"equipo": { "regexp": "[A-Z][a-z]{5,10}" } }
+					"informador": { 
+						"regexp": "[A-Z][a-z]{5,10}"
+					},
+					"asignado": {
+						"regexp": "[A-Z][a-z]{5,10}"
+					},
+					"equipo": {
+						"regexp": "[A-Z][a-z]{5,10}"
+					}
 	}
 }
