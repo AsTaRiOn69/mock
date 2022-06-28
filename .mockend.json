@@ -1,27 +1,102 @@
 {
 	"User": {
-					"idCliente": "{{ Clave }}",
+					"idCliente": { 
+						"regexp": "GDLD-[0-9]{5}"
+					},
 					"idJira": "",
-					"urlPeticion": "https://jirarga.seguros.rga/browse/{{ idCliente }}",
-					"servicio": "AM RGA",
-					"titulo": "{{ Resumen }}",
-					"estado": "{{ Estado }}",
-					"tipo": "Incidencia",                              
-					"prioridad": "{{ Prioridad }}",
-					"fechaCreacion": "{{ Creada }}",
-					"fechaPrevistaEntrega": "",
-					"fechaEntrega": "{{ Fecha de entrega }}",
-					"fechaCierre": "{{ Resuelta }}",
-					"fechaModificacion": "{{ Actualizada }}",
+					"urlPeticion": {
+						"regexp": "https://jirarga.seguros.rga/browse/GDLD-[0-9]{5}",
+					},
+					"servicio": {
+						"string": [
+							"AM RGA"
+						]
+					},
+					"titulo": { "string": {} },
+					"estado": {
+						"string": [
+							"ABIERTO",
+							"ASIGNADO",
+							"CANCELADA",
+							"RECHAZADA",
+							"EN CURSO",
+							"MTO. APLICACIONES",
+							"PENDIENTE DE INFORMACION",
+							"ESPERANDO AL AGENTE",
+							"PDTE. PRODUCCION",
+							"PTE. PRUEBA USUARIO",
+							"PTE. CIERRE",
+							"CERRADO"
+						]
+					},
+					"tipo": {
+						"string": [
+							"Incidencia",
+							"Solicitud Incidencia"
+						]
+					},                              
+					"prioridad": { 
+						"int": { 
+							"min": 1, 
+							"max": 3
+						}
+					},
+					"fechaCreacion": {
+      						"min": "2022-01-01T00:00:00Z",
+					        "max": "2022-06-28T23:59:59Z"
+    					},
+					"fechaPrevistaEntrega": {
+      						"min": "2022-01-01T00:00:00Z",
+					        "max": "2022-06-28T23:59:59Z"
+    					},
+					"fechaEntrega": {
+      						"min": "2022-01-01T00:00:00Z",
+					        "max": "2022-06-28T23:59:59Z"
+    					},
+					"fechaCierre": {
+      						"min": "2022-01-01T00:00:00Z",
+					        "max": "2022-06-28T23:59:59Z"
+    					},
+					"fechaModificacion": {
+      						"min": "2022-01-01T00:00:00Z",
+					        "max": "2022-06-28T23:59:59Z"
+    					},
 					"versionEntrega": "",
-					"categoria": "{{ Agrupación de Aplicaciones }}",
+					"categoria": {
+						"string": [
+							"Accidentes Colectivos", 
+							"Back Office", 
+							"BI", 
+							"Click",
+							"CRM", 
+							"MDM",
+							"Medios",
+							"Multicanalidad",
+							"PBC-FATCA-CRS",
+							"Pensiones", 
+							"Solvencia II", 
+							"Vida Colectivos", 
+							"Vida Individual", 
+							"Vida Prestaciones"
+						]
+					},
 					"estimacion": "",
-					"incurrido": "{{ Tiempo Trabajado }}",
+					"incurrido": { 
+						"int": { 
+							"min": 0, 
+							"max": 5000
+						}
+					},
 					"etc": "",
 					"reaperturas": "",
-					"excluidoAns": "{{ Etiquetas }}",
-					"informador": "{{ Nombre Departamento }}",
-					"asignado": "{{ Responsable }}",
-					"equipo": "{{ Nombre del Proveedor }}"
+					"excluidoAns": {
+						"string": [
+							"NO",
+							""
+						]
+					},
+					"informador": { "string": {} },
+					"asignado": { "string": {} },
+					"equipo": { "string": {} }
 	}
 }
