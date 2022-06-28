@@ -3,8 +3,5 @@
 		"idCliente": { 
 			"regexp": "GDLD-[0-9]{5}"
 		},
-	},
-	"idJira": {
-		"string": ""
 	}
 }
