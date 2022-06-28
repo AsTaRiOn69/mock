@@ -12,7 +12,9 @@
 							"AM RGA"
 						]
 					},
-					"titulo": { "string": {} },
+					"titulo": {
+						"string": {}
+					},
 					"estado": {
 						"string": [
 							"ABIERTO",
@@ -42,24 +44,34 @@
 						}
 					},
 					"fechaCreacion": {
-      						"min": "2022-01-01T00:00:00Z",
-					        "max": "2022-06-28T23:59:59Z"
-    					},
+						"dateTime": {
+	      						"min": "2022-01-01T00:00:00Z",
+						        "max": "2022-06-28T23:59:59Z"
+						}
+					},
 					"fechaPrevistaEntrega": {
-      						"min": "2022-01-01T00:00:00Z",
-					        "max": "2022-06-28T23:59:59Z"
+						"dateTime": {
+	      						"min": "2022-01-01T00:00:00Z",
+						        "max": "2022-06-28T23:59:59Z"
+						}
     					},
 					"fechaEntrega": {
-      						"min": "2022-01-01T00:00:00Z",
-					        "max": "2022-06-28T23:59:59Z"
+						"dateTime": {
+	      						"min": "2022-01-01T00:00:00Z",
+						        "max": "2022-06-28T23:59:59Z"
+						}
     					},
 					"fechaCierre": {
-      						"min": "2022-01-01T00:00:00Z",
-					        "max": "2022-06-28T23:59:59Z"
+						"dateTime": {
+	      						"min": "2022-01-01T00:00:00Z",
+						        "max": "2022-06-28T23:59:59Z"
+						}
     					},
 					"fechaModificacion": {
-      						"min": "2022-01-01T00:00:00Z",
-					        "max": "2022-06-28T23:59:59Z"
+						"dateTime": {
+	      						"min": "2022-01-01T00:00:00Z",
+						        "max": "2022-06-28T23:59:59Z"
+						}
     					},
 					"versionEntrega": {
 						"string": [
