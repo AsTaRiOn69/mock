@@ -8,32 +8,32 @@
         ""
       ]
     },
-	  "urlPeticion": {
-		  "regexp": "https://jirarga\\.seguros\\.rga/browse/GDLD-[0-9]{5}",
-		},
-		"servicio": {
-		  "string": [
-			  "AM RGA"
-		  ]
-		},
-		"titulo": {
-			"string": {}
-		},
-		"estado": {
-		  "string": [
-				"ABIERTO",
-				"ASIGNADO",
-				"CANCELADA",
-				"RECHAZADA",
-				"EN CURSO",
-				"MTO. APLICACIONES",
+    "urlPeticion": {
+      "regexp": "https://jirarga\\.seguros\\.rga/browse/GDLD-[0-9]{5}",
+    },
+    "servicio": {
+      "string": [
+        "AM RGA"
+      ]
+    },
+    "titulo": {
+      "string": {}
+    },
+    "estado": {
+      "string": [
+        "ABIERTO",
+        "ASIGNADO",
+        "CANCELADA",
+        "RECHAZADA",
+        "EN CURSO",
+        "MTO. APLICACIONES",
         "PENDIENTE DE INFORMACION",
-				"ESPERANDO AL AGENTE",
-				"PDTE. PRODUCCION",
-				"PTE. PRUEBA USUARIO",
-				"PTE. CIERRE",
-				"CERRADO"
-			]
-		}
+        "ESPERANDO AL AGENTE",
+        "PDTE. PRODUCCION",
+        "PTE. PRUEBA USUARIO",
+        "PTE. CIERRE",
+        "CERRADO"
+      ]
+    }
   }
 }
