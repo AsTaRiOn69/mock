@@ -76,6 +76,68 @@
         "min": "2022-01-01T00:00:00Z",
         "max": "2022-06-28T23:59:59Z"
       }
+    },
+    "versionEntrega": {
+      "string": [
+        "1.0.0",
+        "1.1.0",
+        "2.0.0" 
+      ]
+    },
+    "categoria": {
+      "string": [
+        "Accidentes Colectivos", 
+        "Back Office", 
+        "BI", 
+        "Click",
+        "CRM", 
+        "MDM",
+        "Medios",
+        "Multicanalidad",
+        "PBC-FATCA-CRS",
+        "Pensiones", 
+        "Solvencia II", 
+        "Vida Colectivos", 
+        "Vida Individual", 
+        "Vida Prestaciones"
+      ]
+    },
+    "estimacion": {
+      "string": [
+        ""
+       ]
+    },
+    "incurrido": { 
+      "int": { 
+        "min": 0,
+        "max": 5000
+      }
+    },
+    "etc": {
+      "string": [
+        ""
+      ]
+    },
+    "reaperturas": { 
+      "int": {
+        "min": 0, 
+        "max": 4
+      }
+    },
+    "excluidoAns": {
+      "string": [
+        "NO",
+        ""
+      ]
+    },
+    "informador": { 
+      "regexp": "[A-Z][a-z]{5,10}"
+    },
+    "asignado": {
+      "regexp": "[A-Z][a-z]{5,10}"
+    },
+    "equipo": {
+      "regexp": "[A-Z][a-z]{5,10}"
     }
   }
 }
