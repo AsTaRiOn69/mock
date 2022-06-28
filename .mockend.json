@@ -5,7 +5,7 @@
 					},
 					"idJira": "",
 					"urlPeticion": {
-						"regexp": "https://jirarga.seguros.rga/browse/GDLD-[0-9]{5}",
+						"regexp": "https://jirarga\\.seguros\\.rga/browse/GDLD-[0-9]{5}",
 					},
 					"servicio": {
 						"string": [
@@ -61,7 +61,13 @@
       						"min": "2022-01-01T00:00:00Z",
 					        "max": "2022-06-28T23:59:59Z"
     					},
-					"versionEntrega": "",
+					"versionEntrega": {
+						string: [
+							"1.0.0",
+							"1.1.0",
+							"2.0.0" 
+						]
+					},
 					"categoria": {
 						"string": [
 							"Accidentes Colectivos", 
@@ -88,15 +94,20 @@
 						}
 					},
 					"etc": "",
-					"reaperturas": "",
+					"reaperturas": { 
+						"int": { 
+							"min": 0, 
+							"max": 4
+						}
+					},
 					"excluidoAns": {
 						"string": [
 							"NO",
 							""
 						]
 					},
-					"informador": { "string": {} },
-					"asignado": { "string": {} },
-					"equipo": { "string": {} }
+					"informador": { "regexp": "[A-Z][a-z]{5,10}" } },
+					"asignado": { "regexp": "[A-Z][a-z]{5,10}" } },
+					"equipo": { "regexp": "[A-Z][a-z]{5,10}" } }
 	}
 }
